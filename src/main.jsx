@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
-import About from './pages/About.jsx'
+import CryptoBeting from './pages/CryptoBeting.jsx'
 import Home from './pages/Home.jsx'
+import Poker from './pages/Poker.jsx'
+import Promo from './pages/Promo.jsx'
 
 
 const router = createBrowserRouter([
@@ -14,8 +16,16 @@ const router = createBrowserRouter([
     element:<App></App>
   },
   {
-    path:'/about',
-    element:<About></About>
+    path:'/Promo',
+    element:<Promo></Promo>
+  },
+  {
+    path:'/Poker',
+    element:<Poker></Poker>
+  },
+  {
+    path:'/cryptoBetting',
+    element:<CryptoBeting></CryptoBeting>
   },
   {
     path:'/home',
